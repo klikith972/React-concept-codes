@@ -1,0 +1,46 @@
+//App.js code(Parent component code)
+import Test2 from './Test2'
+import { useState } from 'react';
+
+function Test1({ username, city, getdata }){
+    //console.log("the prop here is",props)
+
+    //state
+    let [age,setage]=useState(20)
+    return(
+        <div className='textalign-center'>
+        <h1>arey bosdk nen amarudini ra erripukodini kadhu..........</h1>
+        <h2> Data Received from the parent is {username} </h2>
+        <h2> The city received from the parent is {city}</h2>
+        {/*<Test2 />*/}
+        <button className="btn btn-warning" onClick={()=>getdata(age)}>send data to parent </button>
+
+        </div>
+    )
+}
+
+export default Test1;
+
+//Test1.js child component code()
+import Test2 from './Test2'
+import { useState } from 'react';
+
+function Test1({ username, city, getdata }){
+    //console.log("the prop here is",props)
+
+    //state
+    let [age,setage]=useState(20)
+    return(
+        <div className='textalign-center'>
+        <h1>arey bosdk nen amarudini ra erripukodini kadhu..........</h1>
+        <h2> Data Received from the parent is {username} </h2>
+        <h2> The city received from the parent is {city}</h2>
+        {/*<Test2 />*/}
+        <button className="btn btn-warning" onClick={()=>getdata(age)}>send data to parent </button>
+
+        </div>
+    )
+}
+
+export default Test1;
+
